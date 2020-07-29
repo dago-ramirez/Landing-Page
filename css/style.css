@@ -118,6 +118,18 @@ section form input {
     padding: 5px;
 }
 
+#submit:hover {
+    animation-name: background-color;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes background-color {
+    100% {
+      background-color: #faa907;
+    }
+  }
+
 @media (max-width: 1000px) {
     #submit {
         font-size: medium;
@@ -132,10 +144,6 @@ section form input {
         width: auto;
         height: auto;
     }
-}
-
-#submit:hover {
-    background-color: #faa907;
 }
 
 #features {
@@ -239,9 +247,17 @@ section div ul {
 }
 
 .btn:hover {
-    background-color: #faa907;
-    font-size: large;
-}
+    animation-name: background-color;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes background-color {
+    100% {
+      background-color: #faa907;
+      font-weight: bolder;
+    }
+  }
 
 footer {
     background-color: #ddd;
